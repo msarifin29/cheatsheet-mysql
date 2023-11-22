@@ -22,6 +22,7 @@
 | get specifice data by column | `select {name column} from {name table};` |
 | add primary key | `alter table {name table} add primary key ({name column});` |
 | filter data | `select * from {name table} where {condition};` |
+| delete all data in table | `delete from {name table` |
 | update 1 column | `update {name table} set {name column} = {new value} where {conditoion};` |
 | update many column | `update {name table} set {name column} = {value} where {name column A} in ({data column A});` |
 | delete 1 column | `delete from {name table} where {condition};` |
