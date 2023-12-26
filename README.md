@@ -7,6 +7,7 @@
 | delete database | `drop database {name database};` |
 | use database | `use {name database};` |
 | create table | `create table {name table};` |
+| rename table | `rename table {old table} {new table};` |
 | show description table | `desc {name table};` |
 | show table | `show create table {name table};` |
 | add column | `alter table {name table} add column {name column} {type};` |
