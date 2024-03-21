@@ -27,6 +27,7 @@
 | add or delete check constraint | `alter table {name table} add constraint {name constraint} check {condition};` |
 | add index | `alter table {name table} add index {name index} ({name column});` |
 | delete index | `alter table {name table} drop index {name index};` |
+| add relation table with foreign key | `alter table {name table} add constraint {name foreign key} foreign key ({column forein key}) references {name table} ({name column});` |
 ### Select
 | description | code |
 | ---  | ---  |
@@ -56,7 +57,6 @@
 | delete Full-Text Search | `alter table {name table} index {name full text search};` |
 | find by natural language | `select * from {name table} where match({name column}) against("keyword" in natural language mode);` |
 | find by query expansion | `select * from {name table} where match({name column}) against("keyword" with query expansion);` |
-| add relation table with foreign key | `alter table {name table} add constraint {name foreign key} foreign key ({column forein key}) references {name table} ({name column});` |
 ### Join
 | description | code |
 | ---  | ---  |
@@ -68,7 +68,7 @@
 | join many to many | `select {name column A}, {name column B}, {name column B}, {name column C} from {name table C} join {name table B} on ({foreign key B} = {foreign key C}) join {name table A} on ({foreign key A} = {foreign key C});` |
 | backup database | `mysqldump {name database} --user root --password --result-file={location file}{name database}.sql` |
 | restore database | `source {location file mysql};` |
-| 
+
 
 
 
